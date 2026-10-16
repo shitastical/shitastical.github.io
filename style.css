@@ -709,6 +709,30 @@ h1, h2, h3, h4 {
 }
 .download-actions .btn { padding: 9px 18px; font-size: 13.5px; }
 .download-card.is-soon .download-thumb { opacity: .6; }
+.download-steps {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  counter-reset: step;
+}
+.download-steps li {
+  font-size: 14.5px;
+  color: var(--dim);
+  line-height: 1.6;
+  padding-left: 26px;
+  position: relative;
+  margin-bottom: 8px;
+  counter-increment: step;
+}
+.download-steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent);
+}
 
 /* ---------- FOOTER ---------- */
 footer { padding: 40px 0; background: var(--void); border-top: 1px solid var(--line); }
