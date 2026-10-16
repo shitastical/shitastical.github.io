@@ -180,30 +180,6 @@ h1, h2, h3, h4 {
 .btn-donate { background: var(--paper); color: var(--void); }
 .btn-donate:hover { background: var(--accent-hover); }
 
-.btn-bmc {
-  background: var(--accent);
-  color: var(--void);
-  font-weight: 600;
-  width: 150px !important;
-  height: 150px !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  line-height: 1.3;
-  padding: 14px;
-  gap: 4px;
-}
-.btn-bmc .bmc-emoji {
-  font-size: 26px;
-  line-height: 1;
-}
-.btn-bmc .bmc-text {
-  font-size: 14px;
-}
-.btn-bmc:hover { background: var(--accent-hover); }
-
 .btn-outline { background: var(--panel); border-color: var(--line-strong); color: var(--paper); }
 .btn-outline:hover { border-color: var(--accent); background: var(--panel-2); }
 
