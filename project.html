@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Site Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-transition" id="pageTransition"></div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a href="#top" class="brand" data-page="index.html">Your Site Name</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-page="index.html">About</a></li>
+      <li><a href="project.html" class="active" data-page="project.html">Project</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="pageContent">
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="hero-content">
+      <h1>PROJECT NAME</h1>
+      <p class="lede">A paragraph describing the project, its current state, and what this page tracks.</p>
+      <div class="hero-ctas">
+        <a href="#log" class="btn btn-donate">Latest Progress</a>
+        <a href="#gallery" class="btn btn-outline">Gallery</a>
+      </div>
+    </div>
+    <div class="frame" style="max-width: 860px;">
+      <div class="frame-inner"><div class="photo-placeholder-frame"><span>Hero image 16:9</span></div></div>
+      <div class="frame-cap"><span>IMG_HERO</span><span>Caption</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="section" id="game">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>About the project</h2>
+      <p>Explain the project in a few sentences. Add more paragraphs for platform support, pricing, or anything else visitors ask about.</p>
+    </div>
+    <div class="about-body">
+      <div class="reveal about-card">
+        <div class="feature-cols">
+          <div>
+            <h4>Available now</h4>
+            <ul>
+              <li>Feature one</li>
+              <li>Feature two</li>
+              <li>Feature three</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Planned</h4>
+            <ul>
+              <li>Feature four</li>
+              <li>Feature five</li>
+              <li>Feature six</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="reveal about-card">
+        <div class="stat-list">
+          <div class="stat-row"><span class="label">Type</span><span class="value">Value</span></div>
+          <div class="stat-row"><span class="label">Platform</span><span class="value">Value</span></div>
+          <div class="stat-row"><span class="label">Status</span><span class="value">Value</span></div>
+          <div class="stat-row"><span class="label">Started</span><span class="value">Month Year</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Gallery</h2>
+      <p>Click any image to open it full size. Swap each placeholder for an <code>&lt;img&gt;</code> inside <code>.frame-inner</code>.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="frame reveal">
+        <div class="frame-inner"><div class="photo-placeholder-frame"><span>Image 1</span></div></div>
+        <div class="frame-cap"><span>IMG_01</span><span>Caption</span></div>
+      </div>
+      <div class="frame reveal">
+        <div class="frame-inner"><div class="photo-placeholder-frame"><span>Image 2</span></div></div>
+        <div class="frame-cap"><span>IMG_02</span><span>Caption</span></div>
+      </div>
+      <div class="frame reveal">
+        <div class="frame-inner"><div class="photo-placeholder-frame"><span>Image 3</span></div></div>
+        <div class="frame-cap"><span>IMG_03</span><span>Caption</span></div>
+      </div>
+      <div class="frame reveal">
+        <div class="frame-inner"><div class="photo-placeholder-frame"><span>Image 4</span></div></div>
+        <div class="frame-cap"><span>IMG_04</span><span>Caption</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="log">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Progress</h2>
+      <p>Version history and milestones. Newest entries first.</p>
+    </div>
+    <div class="log reveal">
+      <div class="log-entry">
+        <div class="log-date">Mar 2026</div>
+        <div>
+          <span class="log-tag">Version 0.3.0</span>
+          <h3>Third update</h3>
+          <p>Describe what changed in this update.</p>
+        </div>
+      </div>
+      <div class="log-entry">
+        <div class="log-date">Feb 2026</div>
+        <div>
+          <span class="log-tag">Version 0.2.0</span>
+          <h3>Second update</h3>
+          <p>Describe what changed in this update.</p>
+        </div>
+      </div>
+      <div class="log-entry">
+        <div class="log-date">Jan 2026</div>
+        <div>
+          <span class="log-tag">Version 0.1.0</span>
+          <h3>First update</h3>
+          <p>Describe what changed in this update.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="roadmap">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Roadmap</h2>
+      <p>Planned milestones. Dates are targets and may shift.</p>
+    </div>
+    <div class="roadmap reveal">
+      <div class="roadmap-entry">
+        <div class="roadmap-date">Spring 2026</div>
+        <div class="roadmap-content">
+          <h3>Milestone one</h3>
+          <p>Describe this milestone.</p>
+        </div>
+      </div>
+      <div class="roadmap-entry">
+        <div class="roadmap-date">Summer 2026</div>
+        <div class="roadmap-content">
+          <h3>Milestone two</h3>
+          <p>Describe this milestone.</p>
+        </div>
+      </div>
+      <div class="roadmap-entry">
+        <div class="roadmap-date">Winter 2026</div>
+        <div class="roadmap-content">
+          <h3>Milestone three</h3>
+          <p>Describe this milestone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="lightbox" id="screenshotLightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div id="lightboxTarget" style="width:100%; height:100%;"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap" style="justify-content: center; flex-direction: column; gap: 4px;">
+    <span>&copy; 2026 Your Site Name</span>
+    <span><a href="mailto:you@example.com">you@example.com</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

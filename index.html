@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>shitastical</title>
-<meta name="description" content="Projects by shitastical — emulators, ports, and tools.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Site Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+<div class="page-transition" id="pageTransition"></div>
+
+<nav class="nav">
   <div class="wrap">
-    <h1>shitastical</h1>
-    <p class="tagline">Emulators, ports, and tools. Mostly for consoles that weren't supposed to run them.</p>
-    <nav>
-      <a href="https://github.com/shitastical">GitHub</a>
-      <a href="https://x.com/LeoFromSeattle">Bluesky&nbsp;/&nbsp;X</a>
-    </nav>
+    <a href="#top" class="brand" data-page="index.html">Your Site Name</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active" data-page="index.html">About</a></li>
+      <li><a href="project.html" data-page="project.html">Project</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="pageContent">
+<header class="page-hero" id="top">
+  <div class="wrap">
+    <h1>YOUR SITE NAME</h1>
+    <p>A short introduction goes here. Say what you are working on, where people can follow progress, and what is coming next.</p>
   </div>
 </header>
 
-<main class="wrap">
-  <h2 class="section">Projects</h2>
-  <ul class="grid">
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-body">
+      <div class="reveal about-card about-photo-card">
+        <div class="photo-placeholder"><span>Photo / Logo</span></div>
+        <div class="photo-caption">Your Name, role</div>
+      </div>
 
-    <li class="card">
-      <a href="https://github.com/shitastical/nx-on-orbis">
-        <h3>nx-on-orbis</h3>
-      </a>
-      <p>Experimental port of the Eden Switch emulator to a jailbroken PS4 Pro. Closed experiment, open for anyone to continue. Not affiliated with Eden; built with AI. No keys, firmware or games.</p>
-      <p class="meta">updated Oct 2026</p>
-    </li>
+      <div class="reveal about-card">
+        <h4 class="about-card-label">About</h4>
+        <p class="about-bio">A short bio. Replace this with a couple of sentences about who you are and what you make.</p>
+        <div class="stat-list">
+          <div class="stat-row"><span class="label">Started</span><span class="value">2026</span></div>
+          <div class="stat-row"><span class="label">Location</span><span class="value">Somewhere</span></div>
+          <div class="stat-row"><span class="label">Team Size</span><span class="value">1</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <li class="card">
-      <a href="https://github.com/shitastical/DolphinPS4">
-        <h3>DolphinPS4</h3>
-      </a>
-      <p>Dolphin (GameCube/Wii emulator) for jailbroken PS4. Vulkan on the PS4 GPU, PSP-style XMB menu, per-game settings.</p>
-      <p class="meta">updated Oct 2026</p>
-    </li>
+<section class="section section-alt" id="philosophy">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2>Principles</h2>
+    </div>
+    <div class="about-body">
+      <div class="reveal about-card">
+        <h4 class="about-card-label">How I Work</h4>
+        <ul class="about-list">
+          <li>First principle goes here</li>
+          <li>Second principle goes here</li>
+          <li>Third principle goes here</li>
+        </ul>
+      </div>
+      <div class="reveal about-card">
+        <h4 class="about-card-label">What I'm Building</h4>
+        <ul class="about-list">
+          <li>First goal</li>
+          <li>Second goal</li>
+          <li>Third goal</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <li class="card">
-      <a href="https://github.com/shitastical/WineXP">
-        <h3>WineXP <span class="tag">Rust</span></h3>
-      </a>
-      <p>A slop-coded recreation of Windows XP in Rust, with WINE compatibility.</p>
-      <p class="meta">updated Oct 2026</p>
-    </li>
-
-    <li class="card">
-      <a href="https://github.com/shitastical/octofriend">
-        <h3>octofriend</h3>
-      </a>
-      <p>An open-source coding helper. Very friendly!</p>
-      <p class="meta">updated Jan 2026</p>
-    </li>
-
-    <li class="card">
-      <a href="https://github.com/shitastical/daddylivem3u">
-        <h3>daddylivem3u</h3>
-      </a>
-      <p>IPTV/M3U tooling.</p>
-      <p class="meta">updated May 2025</p>
-    </li>
-
-  </ul>
 </main>
 
-<footer class="wrap">
-  <p>Deployed from <a href="https://github.com/shitastical/shitastical.github.io">shitastical.github.io</a>.</p>
+<div class="lightbox" id="screenshotLightbox">
+  <div class="lightbox-content">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <div id="lightboxTarget" style="width:100%; height:100%;"></div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap" style="justify-content: center; flex-direction: column; gap: 4px;">
+    <span>&copy; 2026 Your Site Name</span>
+    <span><a href="mailto:you@example.com">you@example.com</a></span>
+  </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
